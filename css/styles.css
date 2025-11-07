@@ -4,10 +4,11 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    display:flex;
+    padding: 0;
+    display: flex;
     flex-direction: column;
 }
 
@@ -29,20 +30,31 @@ a {
 .introduction-box,
 .footer {
     background-color: #1F2937;
-    padding: 1rem 4rem;
+    padding: 1rem 8rem;
 }
 
 .introduction-box {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 1rem 8rem;
     gap: 1rem;
 }
 
-.introduction-left {
+.introduction-content {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.placeholder-image {
+    width: 420px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6e6e6e;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .information-box {
@@ -52,25 +64,6 @@ a {
     padding: 1rem;
 }
 
-.quote-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #E5E7EB;
-    font-size: 36px;
-    font-weight: 300;
-    font-style: italic;
-    color: #1F2937;
-    padding: 4rem;
-}
-
-.quote-author {
-    font-weight: bold;
-    font-size: 26px;
-    font-style: normal;
-    text-align: right;
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -78,8 +71,8 @@ a {
 }
 
 .signup-box {
-    margin: 4rem;
-    padding: 2rem 4rem;
+    margin: 8rem;
+    padding: 2rem 8rem;
     border-radius: 4px;
     background-color: #3882F6;
     display: flex;
@@ -103,7 +96,7 @@ a {
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .card {
@@ -126,15 +119,24 @@ a {
     height: 180px;
 }
 
-.placeholder-image {
-    width: 420px;
-    height: 180px;
+.quote-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #6e6e6e;
-    text-align: center;
-    flex-shrink: 0;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    padding: 8rem 16rem;
+}
+
+.quote-author {
+    font-weight: bold;
+    font-size: 26px;
+    font-style: normal;
+    align-self: flex-end;
 }
 
 .signup-button {
@@ -146,6 +148,7 @@ a {
     font-weight: bold;
     width: 100px;
     height: 32px;
+    cursor: pointer;
 }
 
 h1 {
